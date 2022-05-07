@@ -1,0 +1,54 @@
+[
+    {
+      "condition": "minecraft:value_check",
+      "value": {
+        "type": "minecraft:score",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "#theta"
+        },
+        "score": "radiateplayers"
+      },
+      "range": {
+        "min": -360,
+        "max": 360
+      }
+    },
+    {
+      "condition": "minecraft:value_check",
+      "value": {
+        "type": "minecraft:score",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "#n"
+        },
+        "score": "radiateplayers"
+      },
+      "range": {
+        "min": 2
+      }
+    },
+    {
+      "condition": "minecraft:value_check",
+      "value": {
+        "type": "minecraft:score",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "#fl"
+        },
+        "score": "radiateplayers"
+      },
+      "range": 1
+    },
+    {
+      "condition": "minecraft:value_check",
+      "value": {
+        "type": "minecraft:score",
+        "target": "this",
+        "score": "radiateplayers"
+      },
+      "range": {
+        "min": 1
+      }
+    }
+  ]  

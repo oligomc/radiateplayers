@@ -1,0 +1,5 @@
+## return error
+execute if score @s radiateplayers matches ..0 run tellraw @s [{"text":"Radius must not be less than 1, got ", "color":"red"}, {"score":{"objective":"radiateplayers","name":"@s"}, "color":"red"}]
+execute if score #n radiateplayers matches ..1 run tellraw @s [{"text":"Number of players with \"radiate\" tag must not be less than 2, got ", "color":"red"}, {"score":{"objective":"radiateplayers","name":"#n"}, "color":"red"}]
+execute unless score #theta radiateplayers matches -360..360 run tellraw @s [{"text":"Angle offset must be within -360..360 (inclusive), got ", "color":"red"}, {"score":{"objective":"radiateplayers","name":"#theta"}, "color":"red"}]
+execute unless score #fl radiateplayers matches 1 run tellraw @s [{"text":"Chunk at [0, 0] is not loaded. Either load the chunk using the /forceload command or restart the data pack using the /reload command", "color":"red"}]
